@@ -1,0 +1,3 @@
+common methods : 
+
+str.length -> Length of a string
