@@ -1,4 +1,16 @@
 let vs var :
-- using var gets global scope for the decalred variable; but using let, we can limit the scope to declared
+-   using var gets global scope for the decalred variable; but using let, we can limit the scope to declared
 loop / block
 
+-   using const for decalring an array, the individual members of arrays are still mutable
+
+-   Object.freeze(obj) : use this to freeze an object defined using const
+
+-   reset paramter :
+const foo = (...args) => {
+    args is an array of variable no of params
+}
+
+spread operator :
+-   unpacks the array & used to spread the array 
+-   can only be used in function or inside arrays; const arr1 = ...arr2 would be error
