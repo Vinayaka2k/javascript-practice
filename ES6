@@ -12,5 +12,69 @@ const foo = (...args) => {
 }
 
 spread operator :
--   unpacks the array & used to spread the array 
+-   unpacks the array & used to spread the array and returns comma seperated elements
 -   can only be used in function or inside arrays; const arr1 = ...arr2 would be error
+
+destructuring from objects :
+-   const obj = {prop1:"val1", prop2:"val2", prop3:"val3"}
+-   const { prop1, prop2 } = obj;
+-   destructures prop1 and prop2 into new variables
+-   const {prop1:property1, prop2:property2} = obj;
+-   renames prop1 and prop2
+
+destructuring arrays :
+-   const a,b = [1,2,3,4,5,6]               // a,b is 1,2
+-   const [a,b,,,,c] = [1,2,3,4,5,6]        // a,b,c is 1,2,6
+
+destructuring with spread :
+-   [a, b, ...arr] = [1,2,3,4,5,6,7]
+-   arr gets the remaining elements [3,4,5,6,7]
+
+destructuring inside function param :
+-   const foo = ({a, b}) => { }
+
+template literals :
+-   using backticks ` to wrap the string
+-   string is multi-line
+-   can use expressions inside ${}
+-   let str = `
+    this is line1
+    using this variable ${var} in line 2
+`
+
+-   const Person = (name, age, gender) => ({name, age, gender})
+-   returns an object with name, age and gender props assigned to name, age and gender variables
+
+OOPS :
+class Vegetable{
+    constructor(veggie){
+        this.veggie = veggie;
+    }
+}
+const c = new Vegetable('carrot')
+-   As usual, constr is fired when new obj is created
+
+-   Getters : get private var of an object
+-   Setters : set private var of an object
+
+class Thermostat{
+  constructor(temp){
+    this._temp = 5/9 * (temp-32);
+  }
+  get temperature(){
+    return this._temp;
+  }
+  set temperature(temp){
+    this._temp = temp;
+  }
+}
+
+const thermos = new Thermostat(76); // Setting in Fahrenheit scale
+let temp = thermos.temperature; // 24.44 in Celsius
+thermos.temperature = 26;
+temp = thermos.temperature; // 26 in Celsius
+
+-   Using a script in html 
+  <script type="module" src="index.js"></script>
+
+-   Using default exports and importing them
