@@ -6,6 +6,7 @@ arr.push -> append to array
 arr.unshift -> add ele to beginning
 arr.pop -> returns popped ele
 arr.shift -> removes first ele and returns it
+typeof ___
 
 
 other imp things to remember :
@@ -14,4 +15,5 @@ arrays are heterogenous
 variables declared anywhere without let or const are considered to be global
 in global vs local var; local var takes the precedence
 if there is no return for a function; it returns undefined
-== doesnot consider type of data of operands; but === considers datatypes as well
+== doesnot consider type of data of operands; but strictly equal to considers datatypes as well
+> and < operators check loosely by datatype of operands
