@@ -1,3 +1,16 @@
-common methods : 
+Javascript -
 
+common methods : 
 str.length -> Length of a string
+arr.push -> append to array
+arr.unshift -> add ele to beginning
+arr.pop -> returns popped ele
+arr.shift -> removes first ele and returns it
+
+
+other imp things to remember :
+string values are immutable
+arrays are heterogenous
+variables declared anywhere without let or const are considered to be global
+in global vs local var; local var takes the precedence
+if there is no return for a function; it returns undefined
