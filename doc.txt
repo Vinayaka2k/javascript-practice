@@ -14,3 +14,4 @@ arrays are heterogenous
 variables declared anywhere without let or const are considered to be global
 in global vs local var; local var takes the precedence
 if there is no return for a function; it returns undefined
+== doesnot consider type of data of operands; but === considers datatypes as well
