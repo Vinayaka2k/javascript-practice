@@ -1,0 +1,4 @@
+let vs var :
+- using var gets global scope for the decalred variable; but using let, we can limit the scope to declared
+loop / block
+
