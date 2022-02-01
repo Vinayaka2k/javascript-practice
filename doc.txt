@@ -30,3 +30,5 @@ if there is no return for a function; it returns undefined
 while chaining elseif; its not mandatory that it ends with an else
 case values in switch are checked using strictly equal to
 if a prop of any object is non-string; JS automatically converts them to a string
+parseInt retuns a NaN if number cant be converted to a string
+second arg of parseInt indicates the base in which the current string is in
