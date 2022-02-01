@@ -78,3 +78,28 @@ temp = thermos.temperature; // 26 in Celsius
   <script type="module" src="index.js"></script>
 
 -   Using default exports and importing them
+
+-   Promises
+
+const makeServerRequest = new Promise((resolve, reject) => {
+  let responseFromServer = false;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+makeServerRequest.then(result => {
+  console.log(result);
+});
+
+makeServerRequest.catch(error => {
+  console.log(error);
+})
+
+-   Promise takes two functions as params : reject and resolve
+-   Mainly used while waiting for an async request like a server request
+-   then is used to handle the promise if its resolved and the result parameter is got from the resolve's parameter
+-   catch is used to handle the promise if its rejected and the error parameter is got from the reject's parameter
