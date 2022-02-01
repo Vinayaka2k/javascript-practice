@@ -8,6 +8,16 @@ arr.pop -> returns popped ele
 arr.shift -> removes first ele and returns it
 typeof ___
 
+switch(n){
+    case 1:
+        ____;
+        break;
+    default:
+        _____;
+        break;
+}
+
+
 
 other imp things to remember :
 string values are immutable
@@ -18,3 +28,4 @@ if there is no return for a function; it returns undefined
 == doesnot consider type of data of operands; but strictly equal to considers datatypes as well
 > and < operators check loosely by datatype of operands
 while chaining elseif; its not mandatory that it ends with an else
+case values in switch are checked using strictly equal to
