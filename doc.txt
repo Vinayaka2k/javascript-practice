@@ -21,7 +21,7 @@ switch(n){
 
 other imp things to remember :
 string values are immutable
-arrays are heterogenous
+arrays, lists and objects are heterogenous
 variables declared anywhere without let or const are considered to be global
 in global vs local var; local var takes the precedence
 if there is no return for a function; it returns undefined
@@ -29,3 +29,4 @@ if there is no return for a function; it returns undefined
 > and < operators check loosely by datatype of operands
 while chaining elseif; its not mandatory that it ends with an else
 case values in switch are checked using strictly equal to
+if a prop of any object is non-string; JS automatically converts them to a string
