@@ -2,8 +2,8 @@ Javascript -
 
 common methods : 
 str.length -> Length of a string
-arr.push(any no of ele) -> append to array; multiple ele can be pushed at once
-arr.unshift(any no of ele) -> add ele to beginning
+arr.push(any no of ele) -> append to array; multiple ele can be pushed at once; returns new length of arr
+arr.unshift(any no of ele) -> add ele to beginning; retuens new length of arr
 arr.pop -> returns popped ele
 arr.shift -> removes first ele and returns it
 arr.splice(startindex, #ele, remaning args are inserted at the removed pos after deleting) -> removes ele from startindex until #ele and returns the removed list of ele
