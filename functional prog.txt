@@ -18,3 +18,5 @@ Reduce
 -   initial_val is the initial value of accumulator
 -   If initial_val is not used, the 1st iteration is skipped and the 1st ele of array is passed to 2nd iteration as the accumulator
 
+Currying and Partial Application
+-   For a func with multiple params; we Call the function with single arg multiple times
