@@ -25,7 +25,7 @@ switch(n){
         break;
 }
 
-
+modified_str = str.split(delimitor or regex for delimiter)
 
 other imp things to remember :
 string values are immutable
