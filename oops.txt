@@ -1,8 +1,13 @@
 -   this
 refers to the object that invoked the method
 
--   instance of usage :
+-  check type of object using instance of :
 obj instanceof Class
+
+-   check type of object using constructor property :
+-   constructor property points to the Class which created the object
+let obj = new Class()
+check : obj.constructor === Class
 
 -   obj.hasOwnProperty(prop)
 returns T if obj has prop as it's own property
