@@ -39,6 +39,8 @@ iterable.every (function(callback)){
     condition which returns bool
 }
 
+-   some method is used with callback to check if any element in the iterable meets a condition; the syntax is similar to every
+
 other imp things to remember :
 string values are immutable
 arrays, lists and objects are heterogenous and can store anything from complex objects to data types like undefined
