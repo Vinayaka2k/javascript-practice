@@ -1,5 +1,20 @@
--   In JS, all functions are first class func and behave like normal variables- 
+-   In JS, all functions are first class objects and behave like normal variables or normal objects- 
 meaning funcs can be assigned to var, passed into another func, or returned from a func
 
 -   In FP, all funcs are pure, meaning they dont change any params passed to them or other data and thus doesnt cause any side effects
 -   In FP, all dependent vars must be passed as params to the function and global var must not be used inside funcs
+
+Map
+-   Iterates thru every element in array and applies the func on each element
+-   Oringinal array is unaltered   
+
+Filter
+-   Iterates thru every element in array and applies the filter func on each element
+-   Oringinal array is unaltered
+
+Reduce
+-   reduce(accumulator, current_obj, ..., initial_val)
+-   value of accumulator for current iteration would be the return value of callback from the prev iteration
+-   initial_val is the initial value of accumulator
+-   If initial_val is not used, the 1st iteration is skipped and the 1st ele of array is passed to 2nd iteration as the accumulator
+
