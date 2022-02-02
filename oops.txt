@@ -1,0 +1,5 @@
+-   this
+refers to the object that invoked the method
+
+-   instance of usage :
+obj instanceof Class
