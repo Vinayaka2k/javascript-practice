@@ -2,10 +2,13 @@ Javascript -
 
 common methods : 
 str.length -> Length of a string
-arr.push -> append to array
-arr.unshift -> add ele to beginning
+arr.push(any no of ele) -> append to array; multiple ele can be pushed at once
+arr.unshift(any no of ele) -> add ele to beginning
 arr.pop -> returns popped ele
 arr.shift -> removes first ele and returns it
+arr.splice(startindex, #ele) -> removes ele from startindex until #ele and returns the removed list of ele
+-> modifies the original array
+
 typeof ___
 
 switch(n){
@@ -21,7 +24,7 @@ switch(n){
 
 other imp things to remember :
 string values are immutable
-arrays, lists and objects are heterogenous
+arrays, lists and objects are heterogenous and can store anything from complex objects to data types like undefined
 variables declared anywhere without let or const are considered to be global
 in global vs local var; local var takes the precedence
 if there is no return for a function; it returns undefined
