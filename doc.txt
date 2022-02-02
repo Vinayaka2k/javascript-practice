@@ -25,7 +25,19 @@ switch(n){
         break;
 }
 
+-   Convert string to array
 modified_str = str.split(delimitor or regex for delimiter)
+
+-   Conver array to string
+string = arr.join(delimiter to apply while joining to string)
+
+-   Convert string to all lowercase
+string.toLowerCase()
+
+-   every method is used with a callback function that applies the callback on every value of iterable and returns true if every iterable satisifies the condotion in the callback
+iterable.every (function(callback)){
+    condition which returns bool
+}
 
 other imp things to remember :
 string values are immutable
