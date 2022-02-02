@@ -2,4 +2,4 @@
 meaning funcs can be assigned to var, passed into another func, or returned from a func
 
 -   In FP, all funcs are pure, meaning they dont change any params passed to them or other data and thus doesnt cause any side effects
-
+-   In FP, all dependent vars must be passed as params to the function and global var must not be used inside funcs
