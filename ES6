@@ -14,6 +14,9 @@ const foo = (...args) => {
 spread operator :
 -   unpacks the array & used to spread the array and returns comma seperated elements
 -   can only be used in function or inside arrays; const arr1 = ...arr2 would be error
+-   arr1 = ['this', 'is', 'an']
+-   arr2 = [...arr1, 'array']
+-   arr2 would have ['this', 'is', 'an', 'array']
 
 destructuring from objects :
 -   const obj = {prop1:"val1", prop2:"val2", prop3:"val3"}
@@ -103,3 +106,4 @@ makeServerRequest.catch(error => {
 -   Mainly used while waiting for an async request like a server request
 -   then is used to handle the promise if its resolved and the result parameter is got from the resolve's parameter
 -   catch is used to handle the promise if its rejected and the error parameter is got from the reject's parameter
+

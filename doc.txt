@@ -6,10 +6,15 @@ arr.push(any no of ele) -> append to array; multiple ele can be pushed at once
 arr.unshift(any no of ele) -> add ele to beginning
 arr.pop -> returns popped ele
 arr.shift -> removes first ele and returns it
-arr.splice(startindex, #ele) -> removes ele from startindex until #ele and returns the removed list of ele
--> modifies the original array
-
+arr.splice(startindex, #ele, remaning args are inserted at the removed pos after deleting) -> removes ele from startindex until #ele and returns the removed list of ele
+                                                                                            -> modifies the original array
+arr.slice(start index, upto index) -> create new array by extracting ele from original array (which is not modified)
+arr.indexOf(arr, ele)   -> returns index of ele in arr else returns -1
 typeof ___
+Object.keys(obj)    -> gets a list of keys for obj
+iterate through all keys in an object -> 
+for(let key in obj){
+}
 
 switch(n){
     case 1:
