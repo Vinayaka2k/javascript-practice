@@ -3,3 +3,19 @@ refers to the object that invoked the method
 
 -   instance of usage :
 obj instanceof Class
+
+-   obj.hasOwnProperty(prop)
+returns T if obj has prop as it's own property
+returns F if obj has prop as the prototype property
+
+-   Add a property to an object's prototype if the value for this object is same across all instances; reduce duplication
+obj.prototype.property = value;
+
+-   for(let prop in obj){
+    if(obj.hasOwnProperty(prop))
+        // prop is the own property of duck
+    else
+        // prop is the prototype property of duck
+}
+
+
