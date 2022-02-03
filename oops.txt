@@ -86,3 +86,7 @@ Bird.prototype = animal;
 -   Bird.prototype.constructor              // would be Animal
 -   We would need to set this manually to Bird.prototype.constructor = Bird
 
+-   Creating new methods in subtype class :
+We can create new methods in Bird class using Bird.prototype.method = function{}
+
+-   It is possible to override the inherited method by defining the same method in sub class as well
