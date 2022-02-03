@@ -34,6 +34,15 @@ b.color                              // blue
 -   Instead of adding individual props to Class.Prototype, we can assign Class.Prototype to an obj
 so that we can assign all the props at one shot
 
-Class.Prototype = {
+Bird.Prototype = {
+    prop1 : val1 ...
+}
+
+-   When the prototype is changed to a new obj this way; the constructor property for any object of Bird would get overriden.
+b.constructor would now point to the global Object instead of Bird.
+-   Therefore, while assigning prototype to new object, add constructor as well like so:
+
+Bird.Prototype = {
+    constructor : Bird,
     prop1 : val1 ...
 }
