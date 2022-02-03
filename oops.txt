@@ -46,3 +46,8 @@ Bird.Prototype = {
     constructor : Bird,
     prop1 : val1 ...
 }
+
+-   Where the prototype comes from ?
+An obj inherits its prototype directly from the constructor function that created it. 
+b inherits its prototype from the Bird constructor function.
+b.prototype.isPrototypeOf(Bird);
