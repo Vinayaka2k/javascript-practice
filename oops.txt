@@ -69,3 +69,20 @@ let child = Object.create(Parent.prototype)
 -   Now, child can use any method of the Parent
 -   child.foo()
 -   child instanceof Parent                             // true
+
+-   Ex : 
+-   Creating an instance of the Parent   
+let animal = Object.create(Animal.prototype);
+-   Setting the child's prototype to instance of Parent
+Bird.prototype = animal;
+
+-   SHortcut : Bird.prototype = Object.create(Animal.Prototype)         // create birds prototype from animal's
+-   In this way, Bird now has all methods of Animal
+-   And any obj created from Bird can also use any method of Animal
+-   let duck = new Bird()
+-   duck.foo()
+
+-   Now, the problem is when Bird inherits Animals prototype, it also inherits its constructor
+-   Bird.prototype.constructor              // would be Animal
+-   We would need to set this manually to Bird.prototype.constructor = Bird
+
