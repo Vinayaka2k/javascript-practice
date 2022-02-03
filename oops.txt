@@ -52,3 +52,12 @@ An obj inherits its prototype directly from the constructor function that create
 b inherits its prototype from the Bird constructor function.
 let b = new Bird()
 Bird.prototype.isPrototypeOf(b);
+
+-   Prototype of a constructor function is the Global Object
+Object.Prototype.isPrototypeOf(Bird.prototype)
+
+-   In prototype chain, Object is supertype for Bird and Bird is supertype for duck
+-   hasOwnProperty method actually exists in Object.Prototype. Since Bird is a subtype of Object,
+it can use Bird.prototype.hasOwnProperty. Since b is subtype of Bird, b can access hasOwnProperty
+
+-   b.hasOwnProperty(name)                  // true
