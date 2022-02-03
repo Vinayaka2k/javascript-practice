@@ -5,6 +5,9 @@ common methods :
 str.length -> Length of a string
 str.toLowerCase()
 str.toUpperCase()
+str.replace("what to replace", "with what")
+str.charCodeAt(index)   -> returns the ASCII value of char in index
+String.fromCharCode(code)  -> returns the character for the ascii code
 
 -   Convert string to array
 modified_str = str.split(delimitor or regex for delimiter)
@@ -20,7 +23,7 @@ arr.shift -> removes first ele and returns it
 arr.splice(startindex, #ele, remaning args are inserted at the removed pos after deleting) -> removes ele from startindex until #ele and returns the removed list of ele;  modifies the original array                                                                                 
 arr.slice(start index, upto index) -> create new array by extracting ele from original array (which is not modified)
 arr.indexOf(arr, ele)   -> returns index of ele in arr else returns -1
-
+arr1.concat(arr2)   -> unions both arrays without modifiying either of them
 
 -   Objects: 
 typeof ___
