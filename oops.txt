@@ -90,3 +90,21 @@ Bird.prototype = animal;
 We can create new methods in Bird class using Bird.prototype.method = function{}
 
 -   It is possible to override the inherited method by defining the same method in sub class as well
+
+-   Use mixins (like composition in C++) to re-use methods b/w unrelated objects :
+
+let flyMixin = function(obj){
+    obj.fly = function(){
+        return "i am flying";
+    }
+}
+let bird = {
+    'name' : __
+    'no_legs' : ___
+}
+let airplane = {
+    'model' : ______
+    'passengers' : ______
+}
+flyMixin(bird)
+flyMixin(airplane)
