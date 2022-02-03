@@ -16,6 +16,14 @@ returns F if obj has prop as the prototype property
 -   Add a property to an object's prototype if the value for this object is same across all instances; reduce duplication
 obj.prototype.property = value;
 
+-   Add prototype props to a Class
+function Bird(){                    // constr function
+    this.name = name;
+}
+let b = new Bird();
+Bird.prototype.color = 'blue';
+b.color                              // blue
+
 -   for(let prop in obj){
     if(obj.hasOwnProperty(prop))
         // prop is the own property of duck
@@ -23,4 +31,9 @@ obj.prototype.property = value;
         // prop is the prototype property of duck
 }
 
+-   Instead of adding individual props to Class.Prototype, we can assign Class.Prototype to an obj
+so that we can assign all the props at one shot
 
+Class.Prototype = {
+    prop1 : val1 ...
+}
