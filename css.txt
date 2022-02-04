@@ -121,4 +121,8 @@ On grid items :
 -   fixed : locks wrt browser's window
 -   an ele with fixed pos wont move when user scrolls
 
--   float
+-   float: USed along with width property to specify how much horizontal space the ele requires
+-   Float ele are removed from their normal flow and pushed to either left/right of parent element.
+
+-   z-index
+-   
