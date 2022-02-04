@@ -50,6 +50,25 @@
 
 ---- FLEXBOX ----
 
--   
+-   https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
+-   display: flex
 
+flex_parent props : 
+-   flex-direction
+-   main axis, cross axis
+-   justify-content
+-   align-items
+-   flex-wrap
+
+flex-item props :
+-   flex-shrink
+-   flex-grow
+-   flex-basis
+-   flex shorthand
+-   order
+-   align-self
+
+---- GRID ----
+
+   
