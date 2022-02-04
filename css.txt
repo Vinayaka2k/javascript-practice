@@ -1,0 +1,10 @@
+- Border
+    border-style: solid;
+    border-width: 5px;
+    border-color: green; 
+    border-radius: 10px; 
+    border-radius: 50%; 
+
+- Set bg color of an ele
+    background-color: silver;
+
