@@ -71,4 +71,12 @@ flex-item props :
 
 ---- GRID ----
 
-   
+On grid containers :
+-   grid-template-columns
+-   grid-template-rows
+-   grid-column-gap
+-   grid-row-gap
+-   grid-gap
+
+On grid items :
+-   grid-column
