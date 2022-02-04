@@ -92,4 +92,20 @@ On grid items :
 -   align-self
 -   grid-area
 
-Media Queries
+---- Media Queries ----
+
+---- Visual Design ----
+
+-   text-align
+-   em is relative to font size of parent
+-   px is absolute unit
+-   % indicates percent of its parent
+-   width, height
+-   strong, em, u tags
+-   hr, img, br, input -> are self closing tags
+-   box-shadow
+-   opacity
+-   text-transform
+-   font-weight
+-   line-height
+-   pseudo-class of a CSS selector
