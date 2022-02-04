@@ -8,3 +8,8 @@
 - Set bg color of an ele
     background-color: silver;
 
+- Order of specificity of applying css for class, id of an ele
+    id has higher specificity than class
+
+- Padding
+    
