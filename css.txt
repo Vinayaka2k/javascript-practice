@@ -114,3 +114,11 @@ On grid items :
 -   position : relative -> used with offsets like top, bottom, left, right 
 -   indicates how much the ele must be moved from where it had to be normally positioned
 -   relative positioning doesnt affect the flow of display of other elements
+-   position: absolute -> Locks ele in place relative to its parent container
+-   this removes the ele from the normal flow of elements, unlike relative
+-   NOTE: the element would be positioned absolutely based on its parent element. Therefore, we
+-   need to mandatorily add position property to its parent item
+-   fixed : locks wrt browser's window
+-   an ele with fixed pos wont move when user scrolls
+
+-   float
