@@ -12,4 +12,13 @@
     id has higher specificity than class
 
 - Padding
-    
+    Distance b/w contents of an ele and border of the ele
+    padding: 20px;
+    padding-top, padding-bottom, padding-left, padding-right
+
+- Margin
+    Distance b/w border of an ele and the surrounding elements
+    If margin of an ele increases, then that ele shrinks (SINCE dist b/w its border and parent ele increases)
+    margin: 20px;
+    If we set the margin -ve; then the ele tries to grow out of its parent ele
+
