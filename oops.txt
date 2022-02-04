@@ -108,3 +108,10 @@ let airplane = {
 }
 flyMixin(bird)
 flyMixin(airplane)
+
+-   CLosure:
+A function always has access to the context in which its declared
+Therefore, if we declare a function and a variable inside the constructor function, 
+we can use the function to access the private variable externally.
+
+-   IIFE : immediately invoked func expr
