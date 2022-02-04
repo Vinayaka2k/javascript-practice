@@ -77,6 +77,16 @@ On grid containers :
 -   grid-column-gap
 -   grid-row-gap
 -   grid-gap
+-   justify-items
+-   align-items
+-   grid-template-areas
+-   repeat
+-   minmax
+-   auto-fill
 
 On grid items :
 -   grid-column
+-   grid-row
+-   justify-self
+-   align-self
+-   grid-area
