@@ -83,6 +83,7 @@ On grid containers :
 -   repeat
 -   minmax
 -   auto-fill
+-   auto-fit
 
 On grid items :
 -   grid-column
@@ -90,3 +91,6 @@ On grid items :
 -   justify-self
 -   align-self
 -   grid-area
+
+
+Media Queries
