@@ -109,3 +109,8 @@ On grid items :
 -   font-weight
 -   line-height
 -   pseudo-class of a CSS selector
+-   p, divs, h's -> start on new line -> block elements
+-   img, spans  -> continue from current line -> inline elements
+-   position : relative -> used with offsets like top, bottom, left, right 
+-   indicates how much the ele must be moved from where it had to be normally positioned
+-   relative positioning doesnt affect the flow of display of other elements
