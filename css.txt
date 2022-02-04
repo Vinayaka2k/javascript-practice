@@ -8,13 +8,9 @@
 - Set bg color of an ele
     background-color: silver;
 
-- Order of specificity of applying css for class, id of an ele
-    id has higher specificity than class
-
 - Padding
     Distance b/w contents of an ele and border of the ele
-    padding: 20px;
-    padding-top, padding-bottom, padding-left, padding-right
+    padding: padding-top, padding-right, padding-bottom, padding-left (in clockwise direction)
 
 - Margin
     Distance b/w border of an ele and the surrounding elements
@@ -22,3 +18,19 @@
     margin: 20px;
     If we set the margin -ve; then the ele tries to grow out of its parent ele
 
+-   Attr Seclector
+    [attr="val"]
+    Ex for <input type="val"> :
+    [type='text']
+
+-   Abs v/s Relative units
+    em is Relative unit; it depends on the elememts font-size
+    Ex: If we set padding for an element as 1.5em; this padding depends on the size of elements font
+
+-   Order of precedence of CSS classes
+    - If we apply a style for body ele and there exitss a specific style for an h1 element inside the body,
+    then the style of h1 takes precedence
+    - Always the style declared the latest in <style> takes precedence over the ones declared above
+    - Order of specifiying class names inside the element doesnt matter at all. 
+    - Ex : ele class="cl c2" same as ele class="c2 c1"
+    - Styles using id Selector Always overrides the styles defined using class Selector
