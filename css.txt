@@ -34,3 +34,22 @@
     - Order of specifiying class names inside the element doesnt matter at all. 
     - Ex : ele class="cl c2" same as ele class="c2 c1"
     - Styles using id Selector Always overrides the styles defined using class Selector
+    - inline styling overrides all (class Selector and id Selector)
+    - prop:val !important --> this overrides all of the above ( class, id Selector and inline)
+
+-   Hex code
+    #6 digits
+    2 for R, 2 for G, 2 for B
+    rgb(brighness for R, G, B)
+
+-   CSS Variables
+    --var_name: value;
+    Using the variable --> property : var(--var_name, fallback_value)
+    Example --> background: var(--penguin-skin, black)
+    Define varibales in :root Selector --> this is a Selector that maps with the HTML element
+
+---- FLEXBOX ----
+
+-   
+
+
