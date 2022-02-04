@@ -92,5 +92,4 @@ On grid items :
 -   align-self
 -   grid-area
 
-
 Media Queries
