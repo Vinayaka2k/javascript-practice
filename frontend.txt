@@ -132,3 +132,12 @@ transform
 -   increase size of ele using scale()
 -   applying transform on a div also applies it on its child elements
 -   skewX, skewY
+
+---- RESPONSIVE WEB DESIGN -----
+
+-   max-width
+-   viewports
+
+------ BOOTSTRAP -----
+
+-
