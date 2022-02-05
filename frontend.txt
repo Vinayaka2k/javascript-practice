@@ -141,4 +141,23 @@ transform
 ------ BOOTSTRAP -----
 
 -   Used for RESPONSIVE design -> elements get resized based on screen size
--   
+-   img-responsive -> fits imge exactly to width of screen
+-   text-center
+-   btn-block   -> stretches the btn to width of page
+
+-   GRID
+-   span
+-   Font Awesome to add icons
+-   form-control        -> for input elements
+-   well
+
+---- SASS (Adding logic to CSS )----
+
+-   creating Variables
+-   Nesting css rules
+-   Defining CSS functions using Mixins
+-   @if @else
+-   @for
+-   @each
+-   @while
+-   partials
