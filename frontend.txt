@@ -140,4 +140,5 @@ transform
 
 ------ BOOTSTRAP -----
 
--
+-   Used for RESPONSIVE design -> elements get resized based on screen size
+-   
