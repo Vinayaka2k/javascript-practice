@@ -15,7 +15,7 @@
 - Margin
     Distance b/w border of an ele and the surrounding elements
     If margin of an ele increases, then that ele shrinks (SINCE dist b/w its border and parent ele increases)
-    margin: 20px;
+    margin: 20px;       -> all 4 margins are set to 20px
     If we set the margin -ve; then the ele tries to grow out of its parent ele
 
 -   Attr Seclector
@@ -125,4 +125,10 @@ On grid items :
 -   Float ele are removed from their normal flow and pushed to either left/right of parent element.
 
 -   z-index
--   
+-   display: block -> changes inline elements to block
+-   center a div -> set margin: auto; This method works for all block elements
+
+transform
+-   increase size of ele using scale()
+-   applying transform on a div also applies it on its child elements
+-   skewX, skewY
