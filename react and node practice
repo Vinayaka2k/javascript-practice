@@ -1,0 +1,160 @@
+JS
+
+JS is sync by default; but can be made async using setTimeout / async-await
+How is it made async ? The way JS is executed in browser is async as it puts timeout funcs in a separate queue and other functions into normal call stack
+
+
+Earlier; JS was run only in browsers, using the interpreter in browsers
+
+Node provides an env to run JS as a general purpose language. It provides interpreter + various libraries
+So, node is a runtime env
+
+NPM is the package manager for node that handles installation and maintenance of various packages
+
+React is a JS library for building UI 
+npx is package runner tool
+npx create-react-app myapp
+
+COmponent is nothing but a JS function starting with caps!!
+
+npm run build
+Will create an optimized build when ready for prod
+
+npm start / npm run start
+Will run the command in start property of package.json file
+
+Npm install __
+Installs the dependencies into node_modules folder 
+
+Npm stop / run stop
+
+Npm test / npm run test
+Will run the command in test property of package.json file
+
+Npm init
+Used to set up a new npm package
+
+
+REACT
+react-scripts start sets up the development environment and starts a server, as well as hot module reloading.
+
+JSX
+Is an extension to JS , instead of writing html and JS logic separately, we can include both in JSX
+Anything within {} is treated as JS and we can write JS expressions inside {}
+Outside, html can be written although everything is compiled to JS using Babel. So, JSX is more closer to JS than to HTML
+For JSX, we need to compulsorily close all tags in HTML 
+
+Every time the setState() function is called. The entire component is re-rendered
+
+Calling a function which changes the state causes the component to rerender.This also causes its subcomponents to be re-rendered
+
+Any event handler registered on any element in react takes the function name as the argument
+
+Too many re-renders. React limits the number of renders to prevent an infinite loop.
+Meaning of this is somewhere you’ve called the setState function directly, so, it goes to an infinite loop where it just sets the state and re-renders the component
+
+When the parent component App gets re-rendered, all of its children components are also re-rendered.
+
+Pass the state of parent to child so that parent remains the ultimate source of truth and any changes to parent component reflects the child component as well.
+
+In react, never change the state direct;y. Always, create a copy of the state into a new object and then change it 
+ 
+NOTE: dont call state hooks (useState, useEffects) inside of another func / inside if / inside loops
+
+Never define components inside of other components.
+
+
+
+
+
+ Async JS
+
+-	JS is single threaded, multi-threading for now can be achieved using web-workers
+
+-	JS by default is sync, therefore if you have some heavy operation, that could potentially freeze the browser. To avoid this, we need async behaviour so that the browser enqueues the heavy func to the call stack and it would be executing in parallel while the browser would do some other stuff. And finally, when the task completes, it is dequeued and result is given back to browser
+
+-	There are limitations of web-workers. Ex - they cant access DOM, etc
+
+-	Async code can be written in two ways : 
+Callbacks
+Promises
+Then method to handle promises
+async/await method to handle promises
+
+
+-	Callbacks involve passing a method to another function and the function calls this method when some condition is achieved. 
+Ex : in event handlers, we register a callback func to the event. When event occurs, the event Handler calls the callback function passed to the eventHandler
+Ex : in XHR, we assign a function to onresponse. I.e., the callback function gets called when we get the response.
+
+-	Promises
+Callback chaining can lead to callback hell. We can use promises instead of this. All errors are handled in promises by a single catch block. Rather than individually handled as in callbacks.
+
+-	We can use promises -> its a way of saying that I promise you that I will give you the result
+
+Ex: 
+
+///////sync code
+
+fetch(url).then((response) => {
+		Return response.blob()
+}).then((myBlob) => {
+		img = createElement(‘img’)
+		img.src = myBlob
+		document.body.appendChild(img)
+})
+.catch((error) => {
+	console.log(error)
+})
+
+////// sync code 
+
+The response returned from fetch is a promise. We have to chain ‘then’ on promises to handle them. 1st is a function that creates an img element and updates its source and appends to the document. Next is a catch function that displays the error.
+
+Problem with this : 
+If we have a sync code later after fetch block; and if we happen to use the result of response of the promise; then the sync code would have already executed when fetch was waiting on the resource to be fetched from the url. So, when sync code executes, the results of fetch would not be available yet. To tackle this, we have to chain the sync code into a new .then block so that it executes after the results of the previous .then block have been processed.
+Better way of tackling this problem : using async/await
+
+
+-	async/await
+
+Async keyword is a way of turning the normal sync functions into asynchronous.
+
+Ex : let hello = () => { return “hello” }
+clog(hello())
+
+This would print “hello”
+
+Ex : let hello = async () => { return “hello” }
+clog(hello())
+
+This would print a promise object
+
+When async keyword is used in a function declaration; they return promises on which we can chain handlers using .then()
+
+hello().then((res) => console.log(res))
+
+the async keyword is added to functions to tell them to return a promise rather than directly returning the value.
+
+Await
+
+Await can only be used within async functions
+Await basically is used to tell the browser to wait until the promise gets resolved.
+
+Ex :  
+let hello = async () => { return await Promise.resolve()} 
+console.log(hello())
+Here, await tells the browser to wait until the promise gets resolved and later returns a promise.
+
+Async/Await reduces chaining .then blocks.
+
+The await keyword causes the JavaScript runtime to pause your code on this line, not allowing further code to execute in the meantime until the async function call has returned its result — very useful if subsequent code relies on that result!
+
+Also, async/await although used to do async programming, looks very much like sync code since we’re not chaining multiple then blocks
+
+We can use a promise.all() using normal then() method / using async-await method to handle multiple promises at once. 
+
+
+-	useEffect
+
+Is fired after the component is rendered for the first time 
+Second parameter == [] indicates effect is run only along with the first render
